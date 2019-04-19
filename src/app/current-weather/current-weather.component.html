@@ -1,0 +1,18 @@
+<div class="container" style="padding-left: 24%" *ngIf="currentDay.cityName">
+    <h2>
+        {{currentDay.cityName}}
+    </h2>    
+<p class="text-primary">{{currentDay.day}}</p>
+<p class="text-primary">{{currentDay.weatherKind}}</p>
+<div class="row">
+  <div class="col-lg-4">
+      <img src="{{currentDay.icon}}" alt="">{{currentDay.temp}}&#8451;
+     
+  </div>
+  <div class="col-lg-6">
+      <p class="text-primary">Humidity:- {{currentDay.humidity}}%</p>
+      <p class="text-primary">Wind Speed:- {{currentDay.windspeed}} mph</p>
+      <p class="text-primary">Precipitation:- {{currentDay.precipitation}}%</p>
+  </div>
+</div>
+</div>
